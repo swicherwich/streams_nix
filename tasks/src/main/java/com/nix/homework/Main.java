@@ -37,8 +37,7 @@ public class Main {
 		double average = doubleStream.get().average().getAsDouble();
 		
 		System.out.println("Array: " + Arrays.toString(doubles));
-		System.out.println(
-				"\nmax: " + max
+		System.out.println("max: " + max
 						+ "\nmin: " + min
 						+ "\nsum: " + sum
 						+ "\naverage: " + average
