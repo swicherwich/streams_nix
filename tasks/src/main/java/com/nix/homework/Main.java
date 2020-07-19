@@ -112,7 +112,7 @@ public class Main {
 		operators.add(unaryOperator3);
 		
 		String strTest = "Test String";
-		UnaryOperator composite = StreamUtils.getUnaryOperator(operators);
+		UnaryOperator composite = StreamUtils.applyUnaryOperator(operators);
 		System.out.println("Result: " + composite.apply(strTest));
 	}
 }
