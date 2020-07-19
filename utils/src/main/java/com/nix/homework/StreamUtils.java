@@ -71,7 +71,7 @@ public class StreamUtils {
 		streamSupplier.get().filter(i -> (i % 2 != 0)).sorted(Comparator.reverseOrder()).forEach(i -> System.out.print(i + " "));
 	}
 	
-	public static UnaryOperator getUnaryOperator(List<UnaryOperator> operators) {
+	public static UnaryOperator applyUnaryOperator(List<UnaryOperator> operators) {
 		return operators.stream().reduce(s -> s, (a, b) -> s -> b.apply(a.apply(s)));
 	}
 }
